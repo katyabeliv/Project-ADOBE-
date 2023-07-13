@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "968009f3-4b8f-42bb-955f-1bfe6f1c1c97",
+		"name": "Project \"Adobe\"",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27897998"
+	},
+	"item": [
+		{
+			"name": "s68989288046391",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 300ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});",
+							"pm.test(\"Response size is less than 7000B\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(7000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"pm.response.to.have.header(\"Server\", \"jag\");});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "AQB=1&ndh=1&pf=1&et=1&t=11%2F6%2F2023%2015%3A28%3A13%202%20-120&cid.&SPP.&id=97A0740664A7E8730A495FC2&as=1&.SPP&adobeid.&id=97A0740664A7E8730A495FC2&as=1&.adobeid&adobe813.&id=97A0740664A7E8730A495FC2&as=1&.adobe813&adobeidMCI.&id=97A0740664A7E8730A495FC2&as=1&.adobeidMCI&mcid.&id=72495193197135977500224237310609889279&.mcid&.cid&d.&nsid=0&jsonv=1&.d&mid=72495193197135977500224237310609889279&aamlh=6&ce=UTF-8&cdp=2&fpCookieDomainPeriods=2&pageName=accounts.adobe.com%3Aprofile&g=https%3A%2F%2Faccount.adobe.com%2Fprofile&c.&digitalData.&marketingtech.&bootstrap.&version=0.19.0&.bootstrap&diagnostic.&stateChangepromise=promise%20resolved&.diagnostic&.marketingtech&initialPage.&pageInfo.&location.&href=https%3A%2F%2Faccount.adobe.com%2F%3Flang%3Den&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2F&search=%3Flang%3Den&.location&.pageInfo&topFrameInfo.&location.&href=https%3A%2F%2Faccount.adobe.com%2F%3Flang%3Den&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2F&search=%3Flang%3Den&.location&.topFrameInfo&.initialPage&page.&pageInfo.&siteSection=account.adobe.com&timeParting=year%3D2023%20%7C%20month%3DJuly%20%7C%20date%3D11%20%7C%20day%3DTuesday%20%7C%20time%3D1%3A26%20PM&location.&href=https%3A%2F%2Faccount.adobe.com%2Fprofile&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2Fprofile&.location&title=Adobe%20Account&pageName=accounts.adobe.com%3Aprofile&language=en-US&modalName=modal%3AUpdate%20company%20name&.pageInfo&topFrameInfo.&location.&href=https%3A%2F%2Faccount.adobe.com%2F%3Flang%3Den&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2F&search=%3Flang%3Den&.location&pageName=accounts.adobe.com%3Aprofile&.topFrameInfo&.page&previousPage.&pageInfo.&percentPageViewed=100&pageName=accounts.adobe.com%3Aprofile&.pageInfo&.previousPage&adobe.&experienceCloud.&analytics.&info.&version=2.23.0&.info&.analytics&audienceManager.&info.&version=9.4&locationHint=6&.info&.audienceManager&visitorService.&info.&version=5.3.0&.info&.visitorService&libraryVersions=2.23.0v%7CLaunch2023-07-11T08%3A18%3A33Z%7C9.4v%7C5.3.0v%7CNo%20Value&.experienceCloud&.adobe&primaryUser.&primaryProfile.&profileInfo.&authState=authenticated&profileID=97A0740664A7E8730A495FC2&authID=97A0740664A7E8730A495FC2&fullProfileID=97A0740664A7E8730A495FC2%40AdobeID&fullAuthID=97A0740664A7E8730A495FC2%40AdobeID&adobeIMSUserProfile.&account_type=type1&preferred_languages.&0=en-us&.preferred_languages&countryCode=RS&email=d9dae6444b28c3e7c4d8d0f38a31a16b79e9a6139a6b5c1ec2943affc4bfcca1&first_name=498de8622cdde7a9ca9f5a2a4d03f7d2a9fca1b8ad5652c7c3876bbf847fa5b0&last_name=7fdf013529e5c12c4680e563c4c2e96dcdbba4ece636f8fa1d572ee48b85e997&.adobeIMSUserProfile&entitlementCreativeCloud=unknown&entitlementStatusCreativeCloud=unknown&returningStatus=Repeat&entitlementFEDsCreativeCloud=free&.profileInfo&.primaryProfile&.primaryUser&organization.&ecid=72495193197135977500224237310609889279&demandbase.&alreadysent=true&.demandbase&.organization&campaign.&external.&affiliate.&campaignInfo.&uid.&uidInfo=1011lwUdMies&.uid&.campaignInfo&.affiliate&.external&.campaign&appLauncher.&appIcon=No&.appLauncher&sophiaResponse.&fromPage.&0.&variationId=65616&actionBlockId=23406_65616ActionBlock_0&campaignId=23406&containerId=1&treatmentId=990f474d-85c9-42e9-8799-2f38a5273a62&.0&1.&variationId=65616&actionBlockId=23406_65616ActionBlock_1&campaignId=23406&containerId=2&treatmentId=3c87d937-c7f7-4e5c-9b17-95a63503c7f9&.1&2.&variationId=65616&actionBlockId=23406_65616ActionBlock_2&campaignId=23406&containerId=3&treatmentId=e3066b7e-ae76-4d12-9f8d-9c0d8c9a25ed&.2&3.&variationId=65616&actionBlockId=23406_65616ActionBlock_3&campaignId=23406&containerId=4&treatmentId=91911bd6-2213-4ddd-81d4-fd32f5e6a3c2&.3&4.&variationId=143841&actionBlockId=48439_143841ActionBlock_0&campaignId=48439&containerId=1&treatmentId=79d8dd76-454e-4e50-b11b-e2cb442f4971&.4&5.&variationId=143841&actionBlockId=48439_143841ActionBlock_1&campaignId=48439&containerId=2&treatmentId=86a03a15-d029-4c71-a2a7-cf394ab2191a&.5&6.&variationId=143841&actionBlockId=48439_143841ActionBlock_2&campaignId=48439&containerId=3&treatmentId=be9a7837-0d90-47a1-a84e-02a68f4bf9c5&.6&7.&variationId=158402&actionBlockId=52708_158402ActionBlock_0&campaignId=52708&containerId=1&treatmentId=afb73d4a-9820-4238-8183-3473d902c44f&.7&8.&variationId=177952&actionBlockId=58370_177952ActionBlock_0&campaignId=58370&containerId=1&treatmentId=009bbf94-f811-4892-b251-45fcbed2da90&.8&.fromPage&listValue=23406_65616ActionBlock_0%3A23406%3A1%3A%3A990f474d-85c9-42e9-8799-2f38a5273a62%3A65616%3A%3A%2C23406_65616ActionBlock_1%3A23406%3A2%3A%3A3c87d937-c7f7-4e5c-9b17-95a63503c7f9%3A65616%3A%3A%2C23406_65616ActionBlock_2%3A23406%3A3%3A%3Ae3066b7e-ae76-4d12-9f8d-9c0d8c9a25ed%3A65616%3A%3A%2C23406_65616ActionBlock_3%3A23406%3A4%3A%3A91911bd6-2213-4ddd-81d4-fd32f5e6a3c2%3A65616%3A%3A%2C48439_143841ActionBlock_0%3A48439%3A1%3A%3A79d8dd76-454e-4e50-b11b-e2cb442f4971%3A143841%3A%3A%2C48439_143841ActionBlock_1%3A48439%3A2%3A%3A86a03a15-d029-4c71-a2a7-cf394ab2191a%3A143841%3A%3A%2C48439_143841ActionBlock_2%3A48439%3A3%3A%3Abe9a7837-0d90-47a1-a84e-02a68f4bf9c5%3A143841%3A%3A%2C52708_158402ActionBlock_0%3A52708%3A1%3A%3Aafb73d4a-9820-4238-8183-3473d902c44f%3A158402%3A%3A%2C58370_177952ActionBlock_0%3A58370%3A1%3A%3A009bbf94-f811-4892-b251-45fcbed2da90%3A177952%3A%3A&.sophiaResponse&profile.&profileInfo.&type=type1&.profileInfo&address.&country=RS&.address&.profile&accountManagement.&highValueActionId=hva-passkeys&.accountManagement&language=en-US&marketingTags.&facebook.&fbp=fb.1.1687259457606.1106960512&.facebook&tiktok.&ttp=S-uz1RzJdMCgK-MMF3mN0NEHLE_&.tiktok&.marketingTags&primaryEvent.&eventInfo.&eventName=account.adobe.com%3AmodalConfirm&.eventInfo&.primaryEvent&clickTaleInfo=0.5229352530612439_1689081944435&.digitalData&hit.&type=event&.hit&.c&h.&architecture=arm&bitness=64&platformVersion=13.4.1&.h&cc=USD&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&pe=lnk_o&pev2=account.adobe.com%3AmodalConfirm&c.&a.&activitymap.&page=accounts.adobe.com%3Aprofile&link=d5d1d2d1S1d1d1B2-Save&region=other&xy=690&pageIDType=1&.activitymap&.a&.c&s=1280x800&c=30&j=1.6&v=N&k=Y&bw=1278&bh=696&mcorgid=9E1005A551ED61CA0A490D45%40AdobeOrg&lrt=109&AQE=1\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sstats.adobe.com/b/ss/adbadobenonacdcprod,adbadobeprototype/10/JS-2.23.0-LDQM/s68989288046391",
+					"protocol": "https",
+					"host": [
+						"sstats",
+						"adobe",
+						"com"
+					],
+					"path": [
+						"b",
+						"ss",
+						"adbadobenonacdcprod,adbadobeprototype",
+						"10",
+						"JS-2.23.0-LDQM",
+						"s68989288046391"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "97A0740664A7E8730A495FC2@AdobeID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Response size is less than 5000B\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(5000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"pm.response.to.have.header(\"Server\", \"openresty\");",
+							"pm.response.to.have.header(\"Access-Control-Allow-Methods\", \"PUT, PATCH\");",
+							"pm.response.to.have.header(\"Connection\", \"keep-alive\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Bearer eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEta2V5LWF0LTEuY2VyIiwia2lkIjoiaW1zX25hMS1rZXktYXQtMSIsIml0dCI6ImF0In0.eyJpZCI6IjE2ODkwNzc3MDg4MzBfNTAyZjJiNTMtYTg0YS00YTQ5LTg2OTQtOWUwNTQ2NzBmZDgyX2V3MSIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJjbGllbnRfaWQiOiJTdW5icmVha1dlYlVJMSIsInVzZXJfaWQiOiI5N0EwNzQwNjY0QTdFODczMEE0OTVGQzJAQWRvYmVJRCIsImFzIjoiaW1zLW5hMSIsImFhX2lkIjoiOTdBMDc0MDY2NEE3RTg3MzBBNDk1RkMyQEFkb2JlSUQiLCJjdHAiOjAsImZnIjoiWFRHTjZRUEdWUFA1NFA0S0dNUVZaSEFBTk09PT09PT0iLCJzaWQiOiIxNjg4NzI1NjIxNzg3XzQ3MTE5MGZhLTU5YTYtNDg1Mi1hMDljLTdhNzJhOTdhMGVjM19ldzEiLCJtb2kiOiI1ZjRhNjg3OSIsInBiYSI6Ik1lZFNlY05vRVYsTG93U2VjIiwiZXhwaXJlc19pbiI6Ijg2NDAwMDAwIiwiY3JlYXRlZF9hdCI6IjE2ODkwNzc3MDg4MzAiLCJzY29wZSI6IkFkb2JlSUQsb3BlbmlkLGFjY3RfbWdtdF9hcGksZ25hdixyZWFkX2NvdW50cmllc19yZWdpb25zLHNvY2lhbC5saW5rLHVubGlua19zb2NpYWxfYWNjb3VudCxhZGRpdGlvbmFsX2luZm8uYWRkcmVzcy5tYWlsX3RvLGNsaWVudC5zY29wZXMucmVhZCxwdWJsaXNoZXIucmVhZCxhZGRpdGlvbmFsX2luZm8uYWNjb3VudF90eXBlLGFkZGl0aW9uYWxfaW5mby5yb2xlcyxhZGRpdGlvbmFsX2luZm8uc29jaWFsLGFkZGl0aW9uYWxfaW5mby5zY3JlZW5fbmFtZSxhZGRpdGlvbmFsX2luZm8ub3B0aW9uYWxBZ3JlZW1lbnRzLGFkZGl0aW9uYWxfaW5mby5zZWNvbmRhcnlfZW1haWwsYWRkaXRpb25hbF9pbmZvLnNlY29uZGFyeV9lbWFpbF92ZXJpZmllZCxhZGRpdGlvbmFsX2luZm8ucGhvbmV0aWNfbmFtZSxhZGRpdGlvbmFsX2luZm8uZG9iLHVwZGF0ZV9wcm9maWxlLmFsbCxzZWN1cml0eV9wcm9maWxlLnJlYWQsc2VjdXJpdHlfcHJvZmlsZS51cGRhdGUsYWRtaW5fbWFuYWdlX3VzZXJfY29uc2VudCxhZG1pbl9zbG8scGlpcF93cml0ZSxtcHMsbGFzdF9wYXNzd29yZF91cGRhdGUsdXBkYXRlX2VtYWlsLHBhc3NrZXlfcmVhZCxwYXNza2V5X3dyaXRlLGFjY291bnRfY2x1c3Rlci5yZWFkLGFjY291bnRfY2x1c3Rlci51cGRhdGUsYWRkaXRpb25hbF9pbmZvLmF1dGhlbnRpY2F0aW5nQWNjb3VudCJ9.AXYdoIKXpXJOIYHrA1TdtftBPORI5pIJZsGkrQKU4M6LIg8HAmBKadF4xUya6ASyAjWhkPiKxz7MgYCmw-0LWwm7VMEXDVMs46oJjs7AvxhxYU7lSqPKzDuadzgdeYfJe7C1wATL-gCQ2ui9LN1zpJqDllLkHZ4l4168t7JLGgSRpc9LWYEZZPCoqNFx1gK1cCiuAp9Wc8906p8BFR56aiqmThGjRjxJjnfcHZdWlfSvyJ3rIfug-8HiC0dASVukGxuxje19p4VsJ3F21ZljFeXL2tkeTizRe5eYuZPP7XshIoguEKyci7P-AtGlcRtIeV9gjuLnotsxRrYX8fR9JQ",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Autorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company\": \"FlowerCity\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cc-api-behance.adobe.io/v2/profile/editor/97A0740664A7E8730A495FC2@AdobeID",
+					"protocol": "https",
+					"host": [
+						"cc-api-behance",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"v2",
+						"profile",
+						"editor",
+						"97A0740664A7E8730A495FC2@AdobeID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "s63720775120564",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Response size is less than 7000B\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(7000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"pm.response.to.have.header(\"Server\", \"jag\");});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "AQB=1&ndh=1&pf=1&et=1&t=11%2F6%2F2023%2015%3A28%3A13%202%20-120&cid.&SPP.&id=97A0740664A7E8730A495FC2&as=1&.SPP&adobeid.&id=97A0740664A7E8730A495FC2&as=1&.adobeid&adobe813.&id=97A0740664A7E8730A495FC2&as=1&.adobe813&adobeidMCI.&id=97A0740664A7E8730A495FC2&as=1&.adobeidMCI&mcid.&id=72495193197135977500224237310609889279&.mcid&.cid&d.&nsid=0&jsonv=1&.d&mid=72495193197135977500224237310609889279&aamlh=6&ce=UTF-8&cdp=2&fpCookieDomainPeriods=2&pageName=accounts.adobe.com%3Aprofile&g=https%3A%2F%2Faccount.adobe.com%2Fprofile&c.&digitalData.&marketingtech.&bootstrap.&version=0.19.0&.bootstrap&diagnostic.&stateChangepromise=promise%20resolved&.diagnostic&.marketingtech&initialPage.&pageInfo.&location.&href=https%3A%2F%2Faccount.adobe.com%2F%3Flang%3Den&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2F&search=%3Flang%3Den&.location&.pageInfo&topFrameInfo.&location.&href=https%3A%2F%2Faccount.adobe.com%2F%3Flang%3Den&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2F&search=%3Flang%3Den&.location&.topFrameInfo&.initialPage&page.&pageInfo.&siteSection=account.adobe.com&timeParting=year%3D2023%20%7C%20month%3DJuly%20%7C%20date%3D11%20%7C%20day%3DTuesday%20%7C%20time%3D1%3A26%20PM&location.&href=https%3A%2F%2Faccount.adobe.com%2Fprofile&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2Fprofile&.location&title=Adobe%20Account&pageName=accounts.adobe.com%3Aprofile&language=en-US&modalName=modal%3AUpdate%20company%20name&.pageInfo&topFrameInfo.&location.&href=https%3A%2F%2Faccount.adobe.com%2F%3Flang%3Den&origin=https%3A%2F%2Faccount.adobe.com&protocol=https%3A&host=account.adobe.com&hostname=account.adobe.com&pathname=%2F&search=%3Flang%3Den&.location&pageName=accounts.adobe.com%3Aprofile&.topFrameInfo&.page&previousPage.&pageInfo.&percentPageViewed=100&pageName=accounts.adobe.com%3Aprofile&.pageInfo&.previousPage&adobe.&experienceCloud.&analytics.&info.&version=2.23.0&.info&.analytics&audienceManager.&info.&version=9.4&locationHint=6&.info&.audienceManager&visitorService.&info.&version=5.3.0&.info&.visitorService&libraryVersions=2.23.0v%7CLaunch2023-07-11T08%3A18%3A33Z%7C9.4v%7C5.3.0v%7CNo%20Value&.experienceCloud&.adobe&primaryUser.&primaryProfile.&profileInfo.&authState=authenticated&profileID=97A0740664A7E8730A495FC2&authID=97A0740664A7E8730A495FC2&fullProfileID=97A0740664A7E8730A495FC2%40AdobeID&fullAuthID=97A0740664A7E8730A495FC2%40AdobeID&adobeIMSUserProfile.&account_type=type1&preferred_languages.&0=en-us&.preferred_languages&countryCode=RS&email=d9dae6444b28c3e7c4d8d0f38a31a16b79e9a6139a6b5c1ec2943affc4bfcca1&first_name=498de8622cdde7a9ca9f5a2a4d03f7d2a9fca1b8ad5652c7c3876bbf847fa5b0&last_name=7fdf013529e5c12c4680e563c4c2e96dcdbba4ece636f8fa1d572ee48b85e997&.adobeIMSUserProfile&entitlementCreativeCloud=unknown&entitlementStatusCreativeCloud=unknown&returningStatus=Repeat&entitlementFEDsCreativeCloud=free&.profileInfo&.primaryProfile&.primaryUser&organization.&ecid=72495193197135977500224237310609889279&demandbase.&alreadysent=true&.demandbase&.organization&campaign.&external.&affiliate.&campaignInfo.&uid.&uidInfo=1011lwUdMies&.uid&.campaignInfo&.affiliate&.external&.campaign&appLauncher.&appIcon=No&.appLauncher&sophiaResponse.&fromPage.&0.&variationId=65616&actionBlockId=23406_65616ActionBlock_0&campaignId=23406&containerId=1&treatmentId=990f474d-85c9-42e9-8799-2f38a5273a62&.0&1.&variationId=65616&actionBlockId=23406_65616ActionBlock_1&campaignId=23406&containerId=2&treatmentId=3c87d937-c7f7-4e5c-9b17-95a63503c7f9&.1&2.&variationId=65616&actionBlockId=23406_65616ActionBlock_2&campaignId=23406&containerId=3&treatmentId=e3066b7e-ae76-4d12-9f8d-9c0d8c9a25ed&.2&3.&variationId=65616&actionBlockId=23406_65616ActionBlock_3&campaignId=23406&containerId=4&treatmentId=91911bd6-2213-4ddd-81d4-fd32f5e6a3c2&.3&4.&variationId=143841&actionBlockId=48439_143841ActionBlock_0&campaignId=48439&containerId=1&treatmentId=79d8dd76-454e-4e50-b11b-e2cb442f4971&.4&5.&variationId=143841&actionBlockId=48439_143841ActionBlock_1&campaignId=48439&containerId=2&treatmentId=86a03a15-d029-4c71-a2a7-cf394ab2191a&.5&6.&variationId=143841&actionBlockId=48439_143841ActionBlock_2&campaignId=48439&containerId=3&treatmentId=be9a7837-0d90-47a1-a84e-02a68f4bf9c5&.6&7.&variationId=158402&actionBlockId=52708_158402ActionBlock_0&campaignId=52708&containerId=1&treatmentId=afb73d4a-9820-4238-8183-3473d902c44f&.7&8.&variationId=177952&actionBlockId=58370_177952ActionBlock_0&campaignId=58370&containerId=1&treatmentId=009bbf94-f811-4892-b251-45fcbed2da90&.8&.fromPage&listValue=23406_65616ActionBlock_0%3A23406%3A1%3A%3A990f474d-85c9-42e9-8799-2f38a5273a62%3A65616%3A%3A%2C23406_65616ActionBlock_1%3A23406%3A2%3A%3A3c87d937-c7f7-4e5c-9b17-95a63503c7f9%3A65616%3A%3A%2C23406_65616ActionBlock_2%3A23406%3A3%3A%3Ae3066b7e-ae76-4d12-9f8d-9c0d8c9a25ed%3A65616%3A%3A%2C23406_65616ActionBlock_3%3A23406%3A4%3A%3A91911bd6-2213-4ddd-81d4-fd32f5e6a3c2%3A65616%3A%3A%2C48439_143841ActionBlock_0%3A48439%3A1%3A%3A79d8dd76-454e-4e50-b11b-e2cb442f4971%3A143841%3A%3A%2C48439_143841ActionBlock_1%3A48439%3A2%3A%3A86a03a15-d029-4c71-a2a7-cf394ab2191a%3A143841%3A%3A%2C48439_143841ActionBlock_2%3A48439%3A3%3A%3Abe9a7837-0d90-47a1-a84e-02a68f4bf9c5%3A143841%3A%3A%2C52708_158402ActionBlock_0%3A52708%3A1%3A%3Aafb73d4a-9820-4238-8183-3473d902c44f%3A158402%3A%3A%2C58370_177952ActionBlock_0%3A58370%3A1%3A%3A009bbf94-f811-4892-b251-45fcbed2da90%3A177952%3A%3A&.sophiaResponse&profile.&profileInfo.&type=type1&.profileInfo&address.&country=RS&.address&.profile&accountManagement.&highValueActionId=hva-passkeys&.accountManagement&language=en-US&marketingTags.&facebook.&fbp=fb.1.1687259457606.1106960512&.facebook&tiktok.&ttp=S-uz1RzJdMCgK-MMF3mN0NEHLE_&.tiktok&.marketingTags&primaryEvent.&eventInfo.&eventName=account.adobe.com%3AupdatePublicProfile&.eventInfo&.primaryEvent&clickTaleInfo=0.5229352530612439_1689081944435&.digitalData&hit.&type=event&.hit&.c&h.&architecture=arm&bitness=64&platformVersion=13.4.1&.h&cc=USD&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&pe=lnk_o&pev2=account.adobe.com%3AupdatePublicProfile&s=1280x800&c=30&j=1.6&v=N&k=Y&bw=1278&bh=696&mcorgid=9E1005A551ED61CA0A490D45%40AdobeOrg&lrt=132&AQE=1\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sstats.adobe.com/b/ss/adbadobenonacdcprod,adbadobeprototype/10/JS-2.23.0-LDQM/s63720775120564",
+					"protocol": "https",
+					"host": [
+						"sstats",
+						"adobe",
+						"com"
+					],
+					"path": [
+						"b",
+						"ss",
+						"adbadobenonacdcprod,adbadobeprototype",
+						"10",
+						"JS-2.23.0-LDQM",
+						"s63720775120564"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "message",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							"pm.test(\"Response time is less than 300ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});",
+							"pm.test(\"Response size is less than 2000B\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(2000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"pm.response.to.have.header(\"Server\", \"adobe\");});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"level\": \"api\",\n    \"message\": {\n        \"method\": \"POST\",\n        \"host\": \"https://cc-api-behance.adobe.io/v2\",\n        \"url\": \"/behance2/profile/editor/97A0740664A7E8730A495FC2@AdobeID\",\n        \"status\": \"200\",\n        \"duration\": 689,\n        \"xRequestId\": \"ToAillZzmQDITlLtbnVM6DU5UW3WmaBD\",\n        \"sessionId\": \"97A0740664A7E8730A495FC21689081980416\"\n    },\n    \"prometheusContext\": [\n        \"Unknown context\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.account.adobe.com/log/message",
+					"protocol": "https",
+					"host": [
+						"services",
+						"account",
+						"adobe",
+						"com"
+					],
+					"path": [
+						"log",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "97A0740664A7E8730A495FC2@AdobeID?antiCache=1689082093864",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 300ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});",
+							"pm.test(\"Response size is less than 5000B\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(5000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"pm.response.to.have.header(\"Server\", \"openresty\");",
+							"pm.response.to.have.header(\"Access-Control-Allow-Methods\", \"GET, POST, DELETE, PATCH\");",
+							"pm.response.to.have.header(\"Connection\", \"keep-alive\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cc-api-behance.adobe.io/v2/users/97A0740664A7E8730A495FC2@AdobeID?antiCache=1689082093864",
+					"protocol": "https",
+					"host": [
+						"cc-api-behance",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"v2",
+						"users",
+						"97A0740664A7E8730A495FC2@AdobeID"
+					],
+					"query": [
+						{
+							"key": "antiCache",
+							"value": "1689082093864"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "message",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							"pm.test(\"Response time is less than 100ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(100);",
+							"});",
+							"pm.test(\"Response size is less than 2000B\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(2000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"pm.response.to.have.header(\"Server\", \"adobe\");});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"level\": \"api\",\n    \"message\": {\n        \"method\": \"GET\",\n        \"host\": \"https://cc-api-behance.adobe.io/v2\",\n        \"url\": \"/behance2/users/97A0740664A7E8730A495FC2@AdobeID\",\n        \"status\": \"200\",\n        \"duration\": 654,\n        \"xRequestId\": \"Gl0gy51phiUofU3BtR4azAaVHLynt01s\",\n        \"sessionId\": \"97A0740664A7E8730A495FC21689081980416\"\n    },\n    \"prometheusContext\": [\n        \"Unknown context\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.account.adobe.com/log/message",
+					"protocol": "https",
+					"host": [
+						"services",
+						"account",
+						"adobe",
+						"com"
+					],
+					"path": [
+						"log",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "Bearer eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEta2V5LWF0LTEuY2VyIiwia2lkIjoiaW1zX25hMS1rZXktYXQtMSIsIml0dCI6ImF0In0.eyJpZCI6IjE2ODkwODE5ODAwOTNfNGU2YWJkMzYtNmIyNC00MGU0LTk1ZjItZjJhNGZkNzc1MzY0X2V3MSIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJjbGllbnRfaWQiOiJTdW5icmVha1dlYlVJMSIsInVzZXJfaWQiOiI5N0EwNzQwNjY0QTdFODczMEE0OTVGQzJAQWRvYmVJRCIsImFzIjoiaW1zLW5hMSIsImFhX2lkIjoiOTdBMDc0MDY2NEE3RTg3MzBBNDk1RkMyQEFkb2JlSUQiLCJjdHAiOjAsImZnIjoiWFRHU01RUEdWUFA1NFA0S0dNUVZaSEFBTk09PT09PT0iLCJzaWQiOiIxNjg5MDgxOTU5MzczXzYwODlmNGEwLTA2MDYtNDIyMC04ZTcyLTdlNGJiMmE3YjYwMl9ldzEiLCJtb2kiOiI1MWRlY2VmNiIsInBiYSI6Ik1lZFNlY05vRVYsTG93U2VjIiwiZXhwaXJlc19pbiI6Ijg2NDAwMDAwIiwic2NvcGUiOiJBZG9iZUlELG9wZW5pZCxhY2N0X21nbXRfYXBpLGduYXYscmVhZF9jb3VudHJpZXNfcmVnaW9ucyxzb2NpYWwubGluayx1bmxpbmtfc29jaWFsX2FjY291bnQsYWRkaXRpb25hbF9pbmZvLmFkZHJlc3MubWFpbF90byxjbGllbnQuc2NvcGVzLnJlYWQscHVibGlzaGVyLnJlYWQsYWRkaXRpb25hbF9pbmZvLmFjY291bnRfdHlwZSxhZGRpdGlvbmFsX2luZm8ucm9sZXMsYWRkaXRpb25hbF9pbmZvLnNvY2lhbCxhZGRpdGlvbmFsX2luZm8uc2NyZWVuX25hbWUsYWRkaXRpb25hbF9pbmZvLm9wdGlvbmFsQWdyZWVtZW50cyxhZGRpdGlvbmFsX2luZm8uc2Vjb25kYXJ5X2VtYWlsLGFkZGl0aW9uYWxfaW5mby5zZWNvbmRhcnlfZW1haWxfdmVyaWZpZWQsYWRkaXRpb25hbF9pbmZvLnBob25ldGljX25hbWUsYWRkaXRpb25hbF9pbmZvLmRvYix1cGRhdGVfcHJvZmlsZS5hbGwsc2VjdXJpdHlfcHJvZmlsZS5yZWFkLHNlY3VyaXR5X3Byb2ZpbGUudXBkYXRlLGFkbWluX21hbmFnZV91c2VyX2NvbnNlbnQsYWRtaW5fc2xvLHBpaXBfd3JpdGUsbXBzLGxhc3RfcGFzc3dvcmRfdXBkYXRlLHVwZGF0ZV9lbWFpbCxwYXNza2V5X3JlYWQscGFzc2tleV93cml0ZSxhY2NvdW50X2NsdXN0ZXIucmVhZCxhY2NvdW50X2NsdXN0ZXIudXBkYXRlLGFkZGl0aW9uYWxfaW5mby5hdXRoZW50aWNhdGluZ0FjY291bnQiLCJjcmVhdGVkX2F0IjoiMTY4OTA4MTk4MDA5MyJ9.U_wxrYAO0FPWQhoJjUqpQnSSa9LTI1Lafx-KVqRQhTMAnSouJS2UiqyS7Uy05qK7sO-nOZ6CMkPx9VN4GCpmyasqc-gqg3DtNsn08B5Q-9qnmUSQndubAKqK_bLeRDJ5z1ucaA73imAu2LGMqmGVTGCGVjBKF4FpygY5WR7SYJfWTcNABDDtj8MV60_pe242rg5OZEvzb-GW7gE9iQV0Ji0R_TRDwpu2rv5_9MsoUF3mAnTBysUwgDlkRN4d9DePShBbpY4CebCqmfQIQxrYTbxGEKYFf9a6LdGK3Gh0OScA5Wc9xT3oEsseihhC22HoM5rSecTvidOohJmDaSMbTA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
